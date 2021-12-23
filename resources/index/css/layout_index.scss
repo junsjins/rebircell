@@ -1,0 +1,98 @@
+/* ---------- Layout - Index ---------- */
+
+$color__black: rgb(0, 0, 0);
+$color__white: rgb(255, 255, 255);
+
+$color__dark: rgb(51, 38, 38);
+$color__grey: rgb(114, 107, 107);
+$color__mid: rgb(221, 221, 225);
+$color__light: rgb(241, 241, 243);
+$color__subtle: rgb(249, 249, 249);
+
+$color__pm: rgb(181, 0, 86);
+$color__sub: rgb(255, 94, 103);
+$color__sl: rgb(152, 183, 190);
+$color__by: rgb(255, 249, 233);
+$color__bp: rgb(255, 240, 246);
+$color__bb: rgb(229, 226, 255);
+
+
+#mainSlider {
+    overflow: hidden;
+    
+    > img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80rem;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+#secMost {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: -7rem auto 2rem;
+    padding: 2rem;
+    max-width: 60rem;
+    background: $color__white;
+    box-shadow: 0 1rem 2rem -.5rem rgba($color__black, .2);
+
+    > .most_item_box {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        width: 20%;
+        height: 10rem;
+        text-align: center;
+        user-select: none;
+        cursor: pointer;
+
+        &:nth-child(1) {
+            background: #f7f8fa;
+        }
+
+        &:nth-child(2) {
+            background: #eee3cd;
+        }
+
+        &:nth-child(3) {
+            background: #f4eee2;
+        }
+
+        &:nth-child(4) {
+            background: #f1b6d2;
+        }
+
+        > img {
+            display: block;
+            height: 7rem;
+            transition: .3s;
+        }
+
+        &:hover {
+            > img {
+                transform: translateY(-1rem) rotateZ(-5deg) scale(1.1);
+                filter: drop-shadow(0 1rem 1rem rgba($color__dark, .3));
+            }
+        }
+    }
+}
+
+.sec_event {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.sec_hotitm {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}

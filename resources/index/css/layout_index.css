@@ -1,0 +1,74 @@
+/* ---------- Layout - Index ---------- */
+#mainSlider {
+	overflow: hidden;
+}
+#mainSlider > img {
+	display: block;
+	margin: 0 auto;
+	max-width: 80rem;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+#secMost {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin: -7rem auto 2rem;
+	padding: 2rem;
+	max-width: 60rem;
+	background: white;
+	box-shadow: 0 1rem 2rem -0.5rem rgba(0, 0, 0, 0.2);
+}
+#secMost > .most_item_box {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	width: 20%;
+	height: 10rem;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	cursor: pointer;
+}
+#secMost > .most_item_box:nth-child(1) {
+	background: #f7f8fa;
+}
+#secMost > .most_item_box:nth-child(2) {
+	background: #eee3cd;
+}
+#secMost > .most_item_box:nth-child(3) {
+	background: #f4eee2;
+}
+#secMost > .most_item_box:nth-child(4) {
+	background: #f1b6d2;
+}
+#secMost > .most_item_box > img {
+	display: block;
+	height: 7rem;
+	transition: 0.3s;
+}
+#secMost > .most_item_box:hover > img {
+	transform: translateY(-1rem) rotateZ(-5deg) scale(1.1);
+	filter: drop-shadow(0 1rem 1rem rgba(51, 38, 38, 0.3));
+}
+
+.sec_event {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.sec_hotitm {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	gap: 2rem;
+}

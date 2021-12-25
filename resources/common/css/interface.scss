@@ -178,6 +178,10 @@ aside#frmSearch {
     background: $color__white;
 }
 
+.section_title {
+    width: 100%;
+}
+
 .item_norm {
     position: relative;
     width: 18rem;
@@ -279,66 +283,11 @@ aside#frmSearch {
     }
 }
 
-.item_hot {
-    position: relative;
-    width: 18rem;
-    background: $color__white;
-    border: .05rem solid $color__mid;
-
-    > .item_img {
-        height: 18rem;
-        border-bottom: .05rem solid $color__mid;
-
-        > img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
-    > .item_content {
-        display: flex;
-        flex-flow: column nowrap;
-        row-gap: .5rem;
-        padding: .5rem;
-        height: 6rem;
-
-        > .item_price {
-            margin-top: auto;
-            text-align: end;
-            font-size: var(--fnt_16);
-            font-weight: bold;
-
-            > .item_salerate {
-                display: inline-block;
-                padding: .25rem;
-                border-radius: .15rem;
-                background: $color__sub;
-                color: $color__white;
-                font-size: var(--fnt_16);
-                font-weight: bold;
-            }
-
-            > .canceled {
-                color: firebrick;
-                font-size: var(--fnt_12);
-                font-weight: normal;
-            }
-        }
-
-        > .item_deliver {
-            text-align: end;
-        }
-    }
-}
-
 footer#footRegular {
     padding: 1rem 0 2rem;
     background: $color__light;
 
     .int_wrap{
-
         ul{
             display: flex;
             gap: 50px;
@@ -352,11 +301,9 @@ footer#footRegular {
                 color: $color__pm;
             }
         }
-
     }
 
     .footBtm{
         line-height: 1.6;
     }
-
 }

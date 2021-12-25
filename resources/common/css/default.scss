@@ -148,7 +148,7 @@ body.prevent_scroll {
 .int_wrap { /* 내부 박스 사이징 */
     margin: 0 auto;
     padding: 0 .5rem;
-    max-width: 60rem;
+    width: 60rem;
 }
 
 .scr_alt { /* 스크린 리더용 얼터닛 텍스트 */

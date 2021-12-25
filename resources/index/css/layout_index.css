@@ -5,7 +5,7 @@
 #mainSlider > img {
 	display: block;
 	margin: 0 auto;
-	max-width: 80rem;
+	width: 100%;
 	height: 100%;
 	-o-object-fit: cover;
 	   object-fit: cover;
@@ -59,16 +59,111 @@
 	filter: drop-shadow(0 1rem 1rem rgba(51, 38, 38, 0.3));
 }
 
-.sec_event {
+.sec_latest {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	gap: 2rem;
 }
 
-.sec_hotitm {
+.sec_best {
+	background: linear-gradient(to bottom, transparent 25%, #98b7be 25%, #98b7be 75%, transparent 75%);
+}
+.sec_best > .section_title {
+	width: 60rem;
+	margin: 2rem auto;
+}
+.sec_best > .grid_container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.5rem;
+}
+
+.item_best {
+	position: relative;
+	background: white;
+	border: 0.05rem solid #dddde1;
+	overflow: hidden;
+}
+.item_best.doublewide {
+	grid-column-end: span 2;
+}
+.item_best.doublelong {
+	grid-row-end: span 2;
+}
+.item_best.doubleboth {
+	grid-row-end: span 2;
+	grid-column-end: span 2;
+}
+.item_best > img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+.item_best > .item_best_desc {
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	gap: 2rem;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10%;
+	background: rgba(0, 0, 0, 0.5);
+	-webkit-backdrop-filter: blur(0.25rem);
+	        backdrop-filter: blur(0.25rem);
+	color: white;
+	transform: translateY(100%);
+	transition: transform 0.5s;
+}
+.item_best:hover > .item_best_desc {
+	transform: translateY(0);
+}
+
+.sec_recmd > .section_title {
+	margin: 2rem 0;
+}
+.sec_recmd > .item_recmd {
+	float: left;
+	position: relative;
+	padding: 0.25rem;
+	width: calc((100% - .5rem) / 2);
+	border: 0.05rem solid #dddde1;
+}
+.sec_recmd > .item_recmd + .item_recmd {
+	margin-left: 0.5rem;
+}
+.sec_recmd > .item_recmd > img {
+	float: left;
+	margin-right: 0.5rem;
+	width: 10rem;
+	height: 10rem;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+.sec_recmd > .item_recmd > h6 {
+	margin: 0.5rem 0;
+	color: #332626;
+}
+.sec_recmd > .item_recmd > p {
+	color: #726b6b;
+	line-height: 1.6;
+}
+.sec_recmd > .item_recmd > .btn_recmd_more {
+	position: absolute;
+	bottom: 0.5rem;
+	right: 0.5rem;
+	padding: 0.5rem;
+	background: #e5e2ff;
+	cursor: pointer;
+}
+.sec_recmd > .item_recmd > .btn_recmd_more > span {
+	display: none;
+}
+.sec_recmd > .item_recmd > .btn_recmd_more:hover > span {
+	display: inline;
 }

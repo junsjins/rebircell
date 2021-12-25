@@ -145,6 +145,10 @@ aside#frmSearch > form > .search_rcmd {
 	background: white;
 }
 
+.section_title {
+	width: 100%;
+}
+
 .item_norm {
 	position: relative;
 	width: 18rem;
@@ -231,54 +235,6 @@ aside#frmSearch > form > .search_rcmd {
 	border-top: 0.05rem solid #dddde1;
 	background: #f1f1f3;
 	font-size: var(--fnt_12);
-}
-
-.item_hot {
-	position: relative;
-	width: 18rem;
-	background: white;
-	border: 0.05rem solid #dddde1;
-}
-.item_hot > .item_img {
-	height: 18rem;
-	border-bottom: 0.05rem solid #dddde1;
-}
-.item_hot > .item_img > img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	-o-object-fit: cover;
-	   object-fit: cover;
-}
-.item_hot > .item_content {
-	display: flex;
-	flex-flow: column nowrap;
-	row-gap: 0.5rem;
-	padding: 0.5rem;
-	height: 6rem;
-}
-.item_hot > .item_content > .item_price {
-	margin-top: auto;
-	text-align: end;
-	font-size: var(--fnt_16);
-	font-weight: bold;
-}
-.item_hot > .item_content > .item_price > .item_salerate {
-	display: inline-block;
-	padding: 0.25rem;
-	border-radius: 0.15rem;
-	background: #ff5e67;
-	color: white;
-	font-size: var(--fnt_16);
-	font-weight: bold;
-}
-.item_hot > .item_content > .item_price > .canceled {
-	color: firebrick;
-	font-size: var(--fnt_12);
-	font-weight: normal;
-}
-.item_hot > .item_content > .item_deliver {
-	text-align: end;
 }
 
 footer#footRegular {

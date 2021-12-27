@@ -14,6 +14,7 @@ select {
 	width: 100%;
 	background: url(../../common/images/products/sprout_back.gif);
 	background-position: 0 280px;
+	background-size: cover;
 	height: 250px;
 }
 #wrapMain ul.route {

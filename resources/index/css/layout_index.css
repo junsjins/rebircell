@@ -63,7 +63,10 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	gap: 2rem;
+}
+.sec_latest > .section_title {
+	width: 60rem;
+	margin: 4rem auto 1rem;
 }
 
 .sec_best {
@@ -71,7 +74,7 @@
 }
 .sec_best > .section_title {
 	width: 60rem;
-	margin: 2rem auto;
+	margin: 4rem auto 1rem;
 }
 .sec_best > .grid_container {
 	display: grid;
@@ -125,7 +128,7 @@
 }
 
 .sec_recmd > .section_title {
-	margin: 2rem 0;
+	margin: 4rem 0 1rem;
 }
 .sec_recmd > .item_recmd {
 	float: left;

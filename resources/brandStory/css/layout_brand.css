@@ -1,0 +1,17 @@
+/* ---------- Layout - Index ---------- */
+#headRegular {
+	position: absolute;
+}
+
+#topBack {
+	width: 100%;
+	background: url(../../common/images/products/sprout_back.gif);
+	background-position: 0 280px;
+	height: 250px;
+}
+
+#brandStory_img {
+	display: flex;
+	justify-content: center;
+	margin-top: 200px;
+}

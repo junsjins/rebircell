@@ -1,0 +1,37 @@
+/* ---------- Layout - Index ---------- */
+
+$color__black: rgb(0, 0, 0);
+$color__white: rgb(255, 255, 255);
+
+$color__dark: rgb(51, 38, 38);
+$color__grey: rgb(114, 107, 107);
+$color__mid: rgb(221, 221, 225);
+$color__light: rgb(241, 241, 243);
+$color__subtle: rgb(249, 249, 249);
+
+$color__pm: rgb(181, 0, 86);
+$color__sub: rgb(255, 94, 103);
+$color__sl: rgb(152, 183, 190);
+$color__by: rgb(255, 249, 233);
+$color__bp: rgb(255, 240, 246);
+$color__bb: rgb(229, 226, 255);
+
+#headRegular {
+    position: absolute;
+}
+
+#topBack{
+    width:100%;
+    background:url(../../common/images/products/sprout_back.gif);
+    background-position:0 280px;
+    height:250px;
+}
+
+#brandStory_img{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+
+}
+
+

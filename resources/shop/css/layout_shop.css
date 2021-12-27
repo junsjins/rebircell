@@ -48,7 +48,8 @@ select {
 	width: 150px;
 	border: 0.05rem solid #dddde1;
 }
-#wrapMain #mainContents #leftCateg .cartNum, #wrapMain #mainContents #leftCateg .recentNum {
+#wrapMain #mainContents #leftCateg .cartNum,
+#wrapMain #mainContents #leftCateg .recentNum {
 	color: #b50056;
 	margin-left: auto;
 	text-decoration: underline;
@@ -248,7 +249,7 @@ select {
 	background-position: center center;
 }
 #pagerBottom .arrRight {
-	background: url(../images/arr_Right.png) no-repeat;
+	background: url(../images/arr_right.png) no-repeat;
 	background-size: contain;
 	background-position: center center;
 }

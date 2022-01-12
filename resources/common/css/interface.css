@@ -163,7 +163,7 @@ aside#frmSearch > form > .search_rcmd {
   margin: 0 auto;
 }
 
-@media (min-width: 320px) and (max-width: 1024px) {
+/*@media (min-width: 320px) and (max-width: 1024px) {
   #m_navRegular {
     display: block;
   }
@@ -172,6 +172,7 @@ aside#frmSearch > form > .search_rcmd {
     display: none;
   }
 }
+*/ /*반응형용 메뉴 / 임시로 닫아둠*/
 #wrapMain {
   min-width: 1200px;
 }

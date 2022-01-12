@@ -17,9 +17,13 @@ $color__bp: rgb(255, 240, 246);
 $color__bb: rgb(229, 226, 255);
 
 h1#mainLogo {
-    img {
-        width: 4rem;
+    a{
+        padding-left:0 !important;
+        img {
+            width: 4rem;
+        }
     }
+    
 }
 
 aside#frmSearch {
@@ -113,7 +117,7 @@ aside#frmSearch {
     left: 0;
     right: 0;
     color: $color__white;
-    text-shadow: 0 0 .25rem rgba($color__dark, .5);
+    text-shadow: 0 0 .5rem rgba(51, 38, 38, .8);
     user-select: none;
     z-index: 100;
 
@@ -149,7 +153,69 @@ aside#frmSearch {
         flex-flow: row nowrap;
         align-items: center;
         column-gap: 2rem;
+        li{
+            a{
+                padding-left:40px;
+            }
+        }
     }
+}
+
+#m_navRegular{
+    width:100%;
+    padding:1rem 0 1rem 0;
+    background:#fff;
+    display:none;
+    section{
+        position:fixed;
+        top:0;
+        left:0;
+        width:30rem;
+        height:100vh;
+        background:#fff;
+        ul{
+
+        }
+    }
+    #mainLogo_m{
+        position:relative;
+        
+        ul{
+            position:absolute;
+            top:1.5rem;
+            left:2rem;
+            li{
+            
+                display:block;
+                width:2rem;
+                height:3px;
+                margin:.35rem auto;
+                background:rgb(181, 0, 86);
+
+            }
+        }
+        .topLogo{
+            background:url(../images/products/brand_logo_rebircell_pink.png) no-repeat;
+            width: 4rem;
+            height: 2.5rem;
+            background-size:4rem 2.75rem;
+            display:block;
+            margin:0 auto;
+        }
+    }
+}
+
+@media (min-width:320px) and (max-width:1024px) {
+    #m_navRegular{
+        display:block;
+    }
+    #navRegular{
+        display:none;
+    }
+}
+
+#wrapMain{
+    min-width:1200px;
 }
 
 #mainSlider {
@@ -166,9 +232,19 @@ aside#frmSearch {
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(to top, rgba($color__black, .5) 0%, transparent 60%);
+        /*background: linear-gradient(to top, rgba($color__black, .5) 0%, transparent 60%);*/
         pointer-events: none;
         content: '';
+    }
+}
+
+@media (min-width:320px) and (max-width:1200px) {
+    #mainSlider{
+        height:auto;
+        img{
+            min-width:1200px;
+        }
+
     }
 }
 
@@ -286,21 +362,26 @@ aside#frmSearch {
 footer#footRegular {
     padding: 1rem 0 2rem;
     background: $color__light;
-
+    min-width:1200px;
     .int_wrap{
         ul{
-            display: flex;
-            gap: 50px;
             margin: 30px 0 50px;
-        }
-
-        li{
-            cursor: pointer;
-
-            &:hover{
-                color: $color__pm;
+            li{
+                float:left;
+                cursor: pointer;
+                margin-right:50px;
+                &:hover{
+                    color: rgb(181, 0, 86);
+                }
+            }
+            &:after{
+                clear:both;
+                display:block;
+                content:'';
             }
         }
+
+        
     }
 
     .footBtm{

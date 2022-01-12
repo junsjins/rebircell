@@ -37,7 +37,8 @@ $color__bb: rgb(229, 226, 255);
     padding: 2rem;
     max-width: 60rem;
     background: $color__white;
-    box-shadow: 0 1rem 2rem -.5rem rgba($color__black, .2);
+    box-shadow: 0 1rem 2rem -.5rem rgba($color__black, .1);
+    position:relative;
 
     > .most_item_box {
         display: flex;
@@ -95,23 +96,180 @@ $color__bb: rgb(229, 226, 255);
     }
 }
 
-.sec_best {
+.section_title{
+    margin: 4rem auto 1rem;
+}
+
+.sec_best_re {
     background: linear-gradient(to bottom, transparent 25%, $color__sl 25%, $color__sl 75%, transparent 75%);
+    box-sizing:border-box;
 
     > .section_title {
         width: 60rem;
         margin: 4rem auto 1rem;
     }
-
-    > .grid_container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: .5rem;
+    .noBdr{
+        border:none;
     }
-}
 
+    div{
+        box-sizing:border-box;
+        overflow:hidden;
+        border: 0.05rem solid #dddde1;
+        img{
+            //width:100%;
+            float:left;
+            
+            :before{
+                width:100%;
+                height: inherit;
+                background:rgba(0,0,0,0.2);
+            }
+            object-fit:cover;
+        }
+        .best_items{
+            position:relative;
+            label{
+                position:absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                transform:translateY(100%);
+                background-color:rgba(0,0,0,0.2);
+                transition-duration: .5s;
+                height:14.5rem;
+                p{
+                    color:#fff;
+                    font-size:30px;
+                    letter-spacing:1px;
+                    text-align:center;
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+                    font-weight:bold;
+                }
+            }
+        }
+    }
+    .bbtm_01, .bbtm_02, .bbtm_04, .bbtm_06{
+        
+        img{
+            height:14.5rem;
+        }
+        .wideHeight{
+            transform: translateX(11%);
+        }
+        
+    }
+
+    .bbtm_06{
+        background-color:#f7f5f3;
+    }
+    
+    .topLeft_div{
+        float:left;
+        margin:0.25rem 0.25rem 0.5rem 0;
+        width:calc(50% - 0.25rem);
+        height:29.5rem;
+        .best_items{
+            label{
+                height:29.5rem;
+            }
+        }
+        
+    }
+    .topRight_div{
+        float:left;
+        margin:0.25rem 0 0.25rem 0.25rem;
+        width:calc(50% - 0.25rem);
+        height:14.5rem;
+        img{
+            width:calc(50% - 0.25rem);
+            height:14.5rem;
+        }
+        .wideRight{
+            width:100%;
+            margin-bottom:0.5rem;
+            height:14.5rem;
+            ::before{
+                clear:both;
+                display:block;
+            }
+        }
+    }
+
+    .trBottom_first, .trBottom_second{
+        float:left;
+        width:calc(25% - 0.38rem);
+        height:14.5rem;
+            img{
+                object-fit:cover;
+                height:14.5rem;
+            }
+        
+    }
+    .trBottom_first{
+        margin:0.25rem 0.5rem 0.25rem 0.25rem;
+    }
+    .trBottom_second{
+        margin-top:0.25rem;
+    }
+
+    .bottom_div{
+        width:100%;
+    }
+
+    /* 하단 박스들 시작 */
+    section#bestBtm_left, section#bestBtm_right{
+            float:left;
+            width:calc(50% - 0.24rem);
+        .innerWide{
+            width:100%;
+        }
+        .bbtm_05{
+            //height:22rem;
+            float:right;
+            height:29.5rem;
+            label{
+                height:29.5rem;
+            }
+        }
+        div{
+            box-sizing: border-box;
+            overflow: hidden;
+            border: 0.05rem solid #dddde1;
+            float: left;
+            width: calc(50% - 0.25rem);
+            //padding-bottom:50%;
+            height: 14.5rem;
+            position:relative;
+            img{
+                position:absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+            }
+        }
+        .innerLeft{
+            margin:0 0.25rem 0.5rem 0;
+        }
+        .innerRight{
+            margin:0 0 0.5rem 0.25rem;
+        }
+    }
+    section#bestBtm_left{
+        margin:0 0.25rem 0.5rem 0;
+    }
+    section#bestBtm_right{
+        margin:0 0 0.5rem 0.23rem;
+    }
+
+}
+/* sec_best_re 끝 */
 .item_best {
-    position: relative;
     background: $color__white;
     border: .05rem solid $color__mid;
     overflow: hidden;

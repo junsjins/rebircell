@@ -10,8 +10,10 @@ $(document).ready(function() {
 
         if ($(window).scrollTop() >= $('#mainSlider').outerHeight() - 200) {
             $('#headRegular').addClass('over');
+            //$('.topLogo').css('background','url(../rebircell/resources/common/images/products/brand_logo_rebircell_pink.png) no-repeat');
         } else {
             $('#headRegular').removeClass('over');
+            //$('.topLogo').css('background','url(../rebircell/resources/common/images/products/brand_logo_rebircell.png) no-repeat');
         }
     });
 
@@ -22,4 +24,15 @@ $(document).ready(function() {
     $('.search_close').click(function() {
         $('aside#frmSearch').removeClass('on');
     });
+
+    $('.best_items').hover(function() {
+        $(this).children('label').css("transform", "translateY(0)");
+      }, function(){
+        $(this).children('label').css("transform", "translateY(100%)");
+      });
+});
+
+
+$(document).ready(function () {
+    
 });
